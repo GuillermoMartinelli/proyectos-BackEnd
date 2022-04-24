@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "f19a1478-8010-48cc-8ede-0a20b37e4fa5",
+		"name": "paciente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "crear paciente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Cristiano\",\r\n    \"apellido\":\"Ronaldo\",\r\n    \"dni\":\"30122545\",\r\n    \"email\":\"algo@email23323.com\",\r\n    \"fechaDeIngreso\":\"2014-01-28\",\r\n    \"domicilio\":{\r\n        \"calle\":\"alle falsa\",\r\n        \"numero\":\"123\",\r\n        \"cuidad\":\"Newton Heath\",\r\n        \"provincia\":\"Manchester\"\r\n    }\r\n        \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pacientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener por id paciente",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pacientes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pacientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar por id paciente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pacientes/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pacientes",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener todos los pacientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/odontologos/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"odontologos",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar paciente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"nombre\": \"GuillermoPacienteactualizado\",\r\n    \"apellido\": \"Martinelli\",\r\n    \"dni\": \"3344565\",\r\n    \"email\": \"guillermo@paciente.com\",\r\n    \"fechaDeIngreso\": \"2022-04-10T00:00:00.000+00:00\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pacientes/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pacientes",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

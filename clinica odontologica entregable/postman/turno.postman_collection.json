@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "de602b78-c467-42d8-93fa-93e23675c01a",
+		"name": "turno",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "crear turno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fecha\":\"2022-31-12\",\r\n    \"hora\":\"12:20:00\",\r\n    \"odontologo\":{\"id\":\"3\"},\r\n    \"paciente\":{\"id\":\"3\"}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/turno",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"turno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "optener turno por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/turno/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"turno",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borrar turno",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/turno/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"turno",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener todos turno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/turno/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"turno",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar turno",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/turno",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"turno"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

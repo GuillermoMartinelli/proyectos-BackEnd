@@ -24,7 +24,7 @@ public class OdontologoService implements IOdontologoService {
 
     @Override
     public OdontologoDTO findById(@NotNull Integer id) {
-        Odontologo odontologo = odontologoRepositorio.getById(id);
+        Odontologo odontologo = odontologoRepositorio.findById(id).get();
         return mapDTO(odontologo);
     }
 

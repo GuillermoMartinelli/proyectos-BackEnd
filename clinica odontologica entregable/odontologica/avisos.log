@@ -59,3 +59,5 @@
  at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 17] (through reference chain: clinica.odontologica.dto.OdontologoDTO["matricula"])
 [2022-04-22 19:14:17] [ ERROR] [GlobalExceptionHandler:&L] Request method 'POST' not supported
 [2022-04-22 19:14:23] [ ERROR] [GlobalExceptionHandler:&L] Request method 'POST' not supported
+[2022-04-24 13:26:42] [ ERROR] [GlobalExceptionHandler:&L] No serializer found for class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: clinica.odontologica.entidades.Odontologo$HibernateProxy$wTCX7Gjw["hibernateLazyInitializer"])
+[2022-04-24 13:26:52] [ ERROR] [GlobalExceptionHandler:&L] No serializer found for class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: clinica.odontologica.entidades.Odontologo$HibernateProxy$wTCX7Gjw["hibernateLazyInitializer"])

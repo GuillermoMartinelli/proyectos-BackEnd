@@ -24,7 +24,7 @@ public class PacienteService implements IPacienteService {
 
     @Override
     public PacienteDTO findById(@NotNull Integer id) {
-        Paciente paciente = pacienteRepositorio.getById(id);
+        Paciente paciente = pacienteRepositorio.findById(id).get();
         return mapDTO(paciente);
     }
 

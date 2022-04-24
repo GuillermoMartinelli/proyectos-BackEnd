@@ -25,7 +25,7 @@ public class DomicilioService implements IDomicilioService {
 
     @Override
     public DomicilioDTO findById(@NotNull Integer id) {
-        Domicilio domicilio = domicilioRepositorio.getById(id);
+        Domicilio domicilio = domicilioRepositorio.findById(id).get();
         return  mapDTO(domicilio);
     }
 

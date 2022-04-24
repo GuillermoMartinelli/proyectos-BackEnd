@@ -26,7 +26,7 @@ public class TurnoService implements ITurnoService {
 
     @Override
     public TurnoDTO findById(@NotNull Integer id) {
-        Turno turno = turnoRepositorio.getById(id);
+        Turno turno = turnoRepositorio.findById(id).get();
         return mapDTO(turno);
     }
 
